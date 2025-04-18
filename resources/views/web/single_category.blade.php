@@ -1,7 +1,7 @@
 <x-layout>
-    <h1>{{ $category['name'] }}</h1>
+<h1>{{ $category ? $category['name'] : 'Default Name' }}</h1>
     <hr>
     <p>
-        {{ $category['description'] }}
+        {{ $category ? $category['description'] : 'Default Description' }}
     </p>
 </x-layout>
